@@ -1,6 +1,6 @@
-import Cards from "react-credit-cards-2";
+// import Cards from "react-credit-cards-2";
 import styles from "./CardCredit.module.css";
-import "react-credit-cards-2/dist/es/styles-compiled.css";
+// import "react-credit-cards-2/dist/es/styles-compiled.css";
 import { useState } from "react";
 import { toast } from "sonner";
 import useCartContext from "../../../hooks/useCartContext";
@@ -56,13 +56,13 @@ const CardCredit = () => {
     <div className={styles.container}>
       {/* la libreria React-Credit-Card-2 no funciona para versiones de node nuevas. Se debe buscar otra alternativa u otra libreria*/}
       <div>
-        <Cards
+        {/* <Cards
           number={number}
           name={name}
           expiry={expiry}
           cvc={cvc}
           focused={cardData.focus as any}
-        />
+        /> */}
       </div>
       <form onSubmit={handleSubmit}>
         <div className={styles.formControl}>
